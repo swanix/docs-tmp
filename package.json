@@ -1,0 +1,26 @@
+{
+  "name": "@swanix/docs-tmp",
+  "version": "0.1.0",
+  "description": "Swanix Docs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server './docs' --files ./**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swanix/docs-tmp"
+  },
+  "author": "Swanix <info@swanix.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swanix/docs-tmp/issues"
+  },
+  "homepage": "https://swanix.org",
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 2.14.2"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.7"
+  }
+}

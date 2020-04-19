@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Swanix</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://swanix.org/assets/favicon.ico">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles.css" type="text/css" />
+  <link rel="stylesheet" href="assets/styles/docsify-custom.css">
+</head>
+<body>
+<div class="menu-container"></div>
+<div id="app"></div>
+<script>
+  window.$docsify = {
+    name: "Swanix",
+    // themeColor: 'royalblue',
+    basePath: 'content/',
+    // onlyCover: true,
+    // coverpage: '_site-cover.md',
+    homepage: '_site-home.md',
+    loadNavbar: '_site-navbar.md',
+    loadSidebar: '_site-menu.md',
+    subMaxLevel: 2,
+    auto2top: true,
+    relativePath: true,
+    notFoundPage: false,
+    pagination: {
+      previousText: 'Anterior',
+      nextText: 'Siguiente',
+      crossChapter: true
+    }
+  };
+</script>
+
+<!-- Docsify -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+<!-- Docsify plugins -->
+<script src="https://unpkg.com/docsify-copy-code"></script>
+<script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!-- Custom menu -->
+<script src="assets/scripts/menu-global.js"></script>
+<script>createMenuGlobal()</script>
+</body>
+</html>
+
