@@ -22,16 +22,26 @@
     basePath: 'content/',
     // onlyCover: true,
     // coverpage: '_site-cover.md',
+    autoHeader: true,
     homepage: '_site-home.md',
     loadNavbar: '_site-navbar.md',
     loadSidebar: '_site-menu.md',
-    subMaxLevel: 2,
+    subMaxLevel: 1,
     auto2top: true,
     relativePath: true,
-    notFoundPage: false,
+    notFoundPage: true,
+    tabs: {
+      persist    : false,      
+      sync       : false,     
+      theme      : 'classic',
+      tabHeadings: true
+    },
+    'flexible-alerts': {
+      style: 'flat'
+    },
     pagination: {
-      previousText: 'Anterior',
-      nextText: 'Siguiente',
+      previousText: 'Previous',
+      nextText: 'Next',
       crossChapter: true
     }
   };
@@ -42,9 +52,12 @@
 <!-- Docsify plugins -->
 <script src="https://unpkg.com/docsify-copy-code"></script>
 <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!-- Docsify optional plugins -->
+<script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
 <!-- Custom menu -->
 <script src="assets/scripts/menu-global.js"></script>
-<script>createMenuGlobal()</script>
+<!-- <script>createMenuGlobal()</script> -->
 </body>
 </html>
 

@@ -1,4 +1,4 @@
   * [Overview](/)
-  * [Section 1](/section1)
-  * [Section 2](/section2)
-  * [Section 3](/section3)
+  * [Example 1](/example1)
+  * [Example 2](/example2)
+  * [Example 3](/example3)
