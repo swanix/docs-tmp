@@ -1,6 +1,6 @@
-# Swanix Docs template
+# Docsix
 
-Template para crear nuevos módulos del sistema con su documentación.
+Template de documentación para crear nuevos módulos del sistema con su documentación.
 
 ## Requisitos
 
@@ -14,7 +14,7 @@ Antes de iniciar debes tener previamente instalados:
 En una carpeta vacía de tu equipo escribe el siguiente comando en la terminal:
 
 ```
-git clone https://github.com/swanix/docs-tmp.git
+git clone https://github.com/swanix/docsix.git
 ```
 
 Cuando se termine de clonar el proyecto escribe el comando:
