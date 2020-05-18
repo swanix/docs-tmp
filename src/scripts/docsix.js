@@ -1,6 +1,8 @@
-// Swanix Menu Global
-// v0.1.0
-// Swanix - 2019
+/*
+ * Docsix - v0.1.0
+ * https://github.com/swanix/docsix
+ * @license MIT
+*/
 
 "use strict";
 
