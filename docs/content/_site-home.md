@@ -1,4 +1,60 @@
 
 #### Quick start
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis eros id lacus ultricies, ac tristique magna imperdiet. Aenean scelerisque purus ante, non egestas nulla varius tempus. Proin quis purus sit amet ex vehicula fringilla. Nam mollis fringilla nibh, vitae consectetur ante laoreet vitae. Morbi id imperdiet libero. Praesent nulla arcu, tincidunt ut efficitur id, lacinia vel est. Aliquam erat volutpat. Suspendisse ac lorem lacinia, sollicitudin tellus at, venenatis enim. Donec efficitur eros eu neque tempus rhoncus. Nulla a neque ipsum. Nam nulla justo, euismod quis lorem semper, vestibulum auctor lacus. Phasellus quis turpis sit amet ligula suscipit venenatis. Nulla sollicitudin dapibus augue, eu sodales ante efficitur at. Sed id tincidunt nisi, vitae dignissim magna. Etiam scelerisque, leo eget eleifend aliquet, neque massa vehicula velit, in tincidunt odio turpis eu enim.
+Crea un archivo `index.html` con el siguiente código HTML para iniciar la documentación, adicionalmente crea una carpeta con nombre `content` donde incluirás todos los archivos markdown de tu documentación.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Swanix</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <!-- Styles -->
+  <link rel="stylesheet" href="dist/tool-docs.min.css">
+</head>
+<body>
+<div id="app"></div>
+<script>
+  window.$docsify = {
+    name: "Tool Docs",
+    // themeColor: 'royalblue',
+    basePath: 'content/',
+    // onlyCover: true,
+    // coverpage: '_site-cover.md',
+    autoHeader: true,
+    homepage: '_site-home.md',
+    loadNavbar: '_site-navbar.md',
+    loadSidebar: '_site-menu.md',
+    subMaxLevel: 1,
+    auto2top: true,
+    relativePath: true,
+    notFoundPage: true,
+    tabs: {
+      persist    : false,      
+      sync       : false,     
+      theme      : 'classic',
+      tabHeadings: true
+    },
+    'flexible-alerts': {
+      style: 'flat'
+    },
+    pagination: {
+      previousText: 'Previous',
+      nextText: 'Next',
+      crossChapter: true
+    }
+  };
+</script>
+
+<!-- Swanix - Tool Docs -->
+<script src="menu.js"></script>
+<script src="dist/tool-docs.min.js"></script>
+</body>
+</html>
+
+```

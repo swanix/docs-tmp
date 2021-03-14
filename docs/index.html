@@ -41,27 +41,13 @@
       previousText: 'Previous',
       nextText: 'Next',
       crossChapter: true
-    },
-    plugins: [
-      function(hook, vm) {
-        hook.doneEach(function() {
-          loadCss = ["https://swanix.org/ui/dist/swanix.min.css"];
-          loadJs =  ["https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js",];
-          setTimeout(initCodeEditor, 300);
-        });
-      }
-    ]
+    }
   };
 </script>
 
-<!-- Docsix - Docsify Theme -->
+<!-- Swanix - Tool Docs -->
 <script src="menu.js"></script>
 <script src="dist/tool-docs.min.js"></script>
-<link href="https://cdn.jsdelivr.net/gh/swanix/coderix/dist/coderix.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/swanix/coderix/dist/coderix.js"></script>
-<script>
-createMenu()
-</script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "name": "@swanix/tool-docs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Swanix - Tool Docs",
   "main": "index.js",
   "scripts": {
