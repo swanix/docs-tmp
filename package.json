@@ -1,7 +1,7 @@
 {
-  "name": "@swanix/docsix",
+  "name": "@swanix/tool-docs",
   "version": "0.1.0",
-  "description": "Swanix Docs",
+  "description": "Swanix - Tool Docs",
   "main": "index.js",
   "scripts": {
     "serve": "gulp",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swanix/docsix"
+    "url": "git+https://github.com/swanix/tool-docs"
   },
   "author": "Swanix <info@swanix.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/swanix/docsix/issues"
+    "url": "https://github.com/swanix/tool-docs/issues"
   },
-  "homepage": "https://swanix.org/docsix",
+  "homepage": "https://swanix.org/tool-docs",
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 2.14.2"

@@ -1,5 +1,5 @@
 //-----------------------------------------------------
-// Docsix
+// Swanix - Tool Docs
 // by Sebastian Serna
 // (c) 2019-present
 //-----------------------------------------------------
@@ -64,7 +64,7 @@ function sass_compiler() {
     .pipe(dest(outputSass))
     .pipe(dest(outputDocs))
     .pipe(cleanCSS())
-    .pipe(rename('docsix.min.css'))
+    .pipe(rename('tool-docs.min.css'))
     .pipe(dest(outputSass))
     .pipe(dest(outputDocs));
 }
@@ -75,9 +75,9 @@ function sass_compiler() {
 
 // JS paths
 var inputJs = [
-    "src/scripts/version.js",
+    "src/scripts/tool-docs-version.js",
     "src/scripts/docsify.js",
-    "src/scripts/docsix.js",
+    "src/scripts/tool-docs.js",
     "src/scripts/docsify-pagination.js",
     "src/scripts/docsify-copy-code.js",
     "src/scripts/docsify-tabs.js"
@@ -88,10 +88,10 @@ var outputJsDocs = 'docs/dist/';
 function js_concat() {
   return src(inputJs)
     .pipe(plumber())
-    .pipe(concat('docsix.js'))
+    .pipe(concat('tool-docs.js'))
     .pipe(dest(outputJs))
     .pipe(dest(outputJsDocs))
-    .pipe(rename('docsix.min.js'))
+    .pipe(rename('tool-docs.min.js'))
     .pipe(terser())
     .pipe(dest(outputJs))
     .pipe(dest(outputJsDocs));

@@ -1,6 +1,6 @@
 /*
- * Docsix - v0.1.0
- * https://github.com/swanix/docsix
+ * Swanix - Tool Docs - v0.2.0
+ * https://github.com/swanix/tool-docs
  * @license MIT
 */
 
@@ -181,7 +181,6 @@ function initMenu() {
     createMenu();
   }
 };
-
 
 document.addEventListener('DOMContentLoaded', function() {
   initMenu();

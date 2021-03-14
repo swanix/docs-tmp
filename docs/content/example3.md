@@ -2,18 +2,6 @@
 
 #### HTML
 
-<textarea code-editor="html" code-result-size="220">
-<h3>Paragraph 1</h3>
-<p>
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
- Nulla nunc est, ultricies nec leo sit amet, ultricies semper 
- donec odio nunc, ornare quis turpis in, accumsan sollicitudin 
- phasellus velit libero, ultricies vel ante eget, tincidunt. 
- Donec a turpis pretium, finibus felis sed, consequat ex.
-</p>
-</textarea>
-
-
 <textarea code-editor="html" code-result-size="300">
 <h5>Swanix Buttons</h5>
 <button class="is-basic">Button</button>
