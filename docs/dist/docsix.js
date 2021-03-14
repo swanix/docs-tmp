@@ -15,43 +15,15 @@
 
 "use strict";
 
-const menuGlobalItems = [
-  { 
-    name: '', 
-    icon: "<img src='https://swanix.org/assets/images/logo-icon.svg'/>", 
-    link: "/"
-  },
-  { 
-    name: 'Brand', 
-    icon: "⎈", 
-    link: "/brand/"
-  },
-  { 
-    name: 'Icons', 
-    icon: "♘", 
-    link: "/icons/"
-  },
-  { 
-    name: 'UI', 
-    icon: "▥", 
-    link: "/ui/"
-  },
-  { 
-    name: 'Palettes', 
-    icon: "❖", 
-    link: "/palettes/"
-  }
-];
-
-const menuGlobalTemplate = /*html*/ `
-  <div class="menu-global-sections">
-      ${menuGlobalItems.map(item => `
-        <a class="menu-global-item" href="${item.link}">
-          <span class="menu-global-item-icon">${item.icon}</span>
-          ${item.name ? `<span class="menu-global-item-text">${item.name}</span>`:` `}
-        </a>
-      `).join('')}
-  </div>
+const menuGlobalTemplate = `
+<div class="menu-global-sections">
+    ${menuItems.map(item => `
+      <a class="menu-global-item" href="${item.link}">
+        <span class="menu-global-item-icon">${item.icon}</span>
+        ${item.name ? `<span class="menu-global-item-text">${item.name}</span>`:` `}
+      </a>
+    `).join('')}
+</div>
 `;
 
 const menuGlobalStyles = /*html*/ `
@@ -192,16 +164,16 @@ body {
 </style>
 `;
 
-function createMenuGlobal() {
+function createMenu() {
   let menuGlobal = document.createElement('div');
   menuGlobal.id = "menu-global";
   menuGlobal.innerHTML = menuGlobalTemplate + menuGlobalStyles;
 
   document.body.insertAdjacentElement("afterbegin", menuGlobal);
-  addMenuGlobalActiveClass();
+  addMenuActiveClass();
 }
 
-function addMenuGlobalActiveClass() {
+function addMenuActiveClass() {
   let sectionPathname = window.location.pathname;
   let menuLink = document.getElementsByClassName('menu-global-item');
 
@@ -212,14 +184,17 @@ function addMenuGlobalActiveClass() {
   } 
 };
 
-function initMenuGlobal() {
+function initMenu() {
   let sectionLocation = window.location.hostname;
   if(sectionLocation !== 'localhost') {
-    createMenuGlobal();
+    createMenu();
   }
 };
 
-document.addEventListener("DOMContentLoaded", initMenuGlobal);
+
+document.addEventListener('DOMContentLoaded', function() {
+  initMenu();
+});
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
