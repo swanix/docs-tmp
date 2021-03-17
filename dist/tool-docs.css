@@ -1,5 +1,5 @@
 /*!
- * Swanix - Tool Docs - v0.2.0
+ * Swanix - Tool Docs - v0.2.1
  * https://github.com/swanix/tool-docs
  * @license MIT
  * Based on Docsify - Vue Theme
@@ -9,14 +9,9 @@
   BASE
 ---------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600");
-* {
-  box-sizing: border-box;
-}
-
 html, body {
   padding: 0;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
 }
@@ -475,7 +470,6 @@ body.sticky .sidebar-toggle {
   left: 300px;
   -webkit-transition: left 250ms ease;
   transition: left 250ms ease;
-  overflow: auto;
 }
 
 .markdown-section {

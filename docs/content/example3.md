@@ -1,3 +1,3 @@
-### Code Editor
+# Example 3
 
-#### Coming soon
+### Code Editor

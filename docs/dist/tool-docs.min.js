@@ -1,5 +1,5 @@
 /*!
- * Swanix - Tool Docs - v0.2.0
+ * Swanix - Tool Docs - v0.2.1
  * https://github.com/swanix/tool-docs
  * @license MIT
  * Based on Docsify@4
