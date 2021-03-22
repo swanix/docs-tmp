@@ -1,3 +1,5 @@
+<header class="hero" style="background: var(--primary)"></header>
+
 # Overview
 
 #### Quick start

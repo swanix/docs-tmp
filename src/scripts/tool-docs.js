@@ -1,5 +1,5 @@
 /*
- * Swanix - Tool Docs - v0.2.1
+ * Swanix - Tool Docs - v0.2.2
  * https://github.com/swanix/tool-docs
  * @license MIT
 */
@@ -17,7 +17,7 @@ const menuGlobalTemplate = `
 </div>
 `;
 
-const menuGlobalStyles = /*html*/ `
+const menuGlobalStyles = `
 <style>
 
 :root {
@@ -151,7 +151,6 @@ body {
   padding: 0;
   margin: 0;
 }
-  
 </style>
 `;
 
@@ -175,10 +174,20 @@ function addMenuActiveClass() {
   } 
 };
 
+function disableMenuLinksOnLocalhost() {
+  let menuItems = document.getElementsByClassName('menu-global-item');
+  for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].href = "javascript:void(0)";
+  }
+}
+
 function initMenu() {
   let sectionLocation = window.location.hostname;
   if(sectionLocation !== 'localhost') {
     createMenu();
+  } else {
+    createMenu();
+    disableMenuLinksOnLocalhost();
   }
 };
 

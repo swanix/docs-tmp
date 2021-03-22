@@ -1,5 +1,5 @@
 /*!
- * Swanix - Tool Docs - v0.2.1
+ * Swanix - Tool Docs - v0.2.2
  * https://github.com/swanix/tool-docs
  * @license MIT
  * Based on Docsify - Vue Theme
@@ -474,7 +474,7 @@ body.sticky .sidebar-toggle {
 
 .markdown-section {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 980px;
   padding: 30px 15px 40px 15px;
   position: relative;
 }
@@ -1113,4 +1113,28 @@ pre::after {
   right: 0;
   text-align: right;
   top: 0;
+}
+
+/* Swanix - Tool Docs - Custom CSS */
+#main .hero {
+  width: 1400px;
+  height: 300px;
+  position: absolute;
+  left: -182px;
+  right: 0;
+  top: -60px;
+  background: #000;
+}
+
+#main .hero + h1 {
+  color: #FFF !important;
+  z-index: 9999;
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+#main .hero + h1 a,
+#main .hero + h1 a span {
+  color: #FFF;
 }

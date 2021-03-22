@@ -1,3 +1,4 @@
+<header class="hero" style="background: var(--primary)"></header>
 
 # Example 1
 
@@ -6,7 +7,6 @@
 ##### Helpers
 
 ### Image
-
 
 ![Cover](../assets/images/cover-bg.jpg ':class=someCssClass')
 
