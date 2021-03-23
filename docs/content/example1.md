@@ -1,4 +1,4 @@
-<header class="hero" style="background: var(--primary)"></header>
+<figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
 # Example 1
 
@@ -69,3 +69,8 @@ Tasks group
 ### Customise ID for headings
 
 ### Hello world :id=custom-id
+
+
+### Image credits
+
+- **Dynamic Wang** on [Unsplash](https://unsplash.com/photos/g-YsyUUwT9M)
