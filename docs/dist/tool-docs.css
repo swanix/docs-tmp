@@ -1,5 +1,5 @@
 /*!
- * Swanix - Tool Docs - v0.2.2
+ * Swanix - Tool Docs - v0.2.3
  * https://github.com/swanix/tool-docs
  * @license MIT
  * Based on Docsify - Vue Theme
@@ -1187,6 +1187,27 @@ pre::after {
   color: var(--hero-title);
 }
 
+/* Custom scrollbar */
+.sidebar {
+  scrollbar-color: rgba(255, 255, 255, 0.1) rgba(0, 0, 0, 0);
+  /* Firefox */
+}
+
+/* 
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track-piece  {
+  background-color: #C2D2E4;
+}
+
+.sidebar::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: #0A4C95;
+} 
+*/
 /* Docsify tabs custom styles */
 .docsify-tabs button {
   outline: none;
