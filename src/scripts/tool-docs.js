@@ -1,5 +1,5 @@
 /*
- * Swanix - Tool Docs - v0.2.4
+ * Swanix - Tool Docs - v0.2.5
  * https://github.com/swanix/tool-docs
  * @license MIT
 */
@@ -183,7 +183,7 @@ function disableMenuLinksOnLocalhost() {
 
 function initMenu() {
   let sectionLocation = window.location;
-  if(sectionLocation.hostname !== 'localhost' && sectionLocation.href.indexOf("192") === 1 ) {
+  if(sectionLocation.hostname !== 'localhost') {
     createMenu();
   } else {
     createMenu();
