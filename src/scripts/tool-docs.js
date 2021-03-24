@@ -1,5 +1,5 @@
 /*
- * Swanix - Tool Docs - v0.2.3
+ * Swanix - Tool Docs - v0.2.4
  * https://github.com/swanix/tool-docs
  * @license MIT
 */
@@ -182,8 +182,8 @@ function disableMenuLinksOnLocalhost() {
 }
 
 function initMenu() {
-  let sectionLocation = window.location.hostname;
-  if(sectionLocation !== 'localhost') {
+  let sectionLocation = window.location;
+  if(sectionLocation.hostname !== 'localhost' && sectionLocation.href.indexOf("192") === 1 ) {
     createMenu();
   } else {
     createMenu();

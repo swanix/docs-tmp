@@ -18,9 +18,9 @@
 
 ### Important content
 
-!> Content!
+!> Content 1
 
-!> Content! 
+!> Content 2
 
 ##### General tips
 
