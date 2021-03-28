@@ -1,33 +1,3 @@
-<figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
-
-# Example 3
-
-
-### Icons List
-
-Loop from external file `icons.json` using Docsify Mustache plugin:
-
-<div class="grid five-columns">
-{{#icons}}
-<div class="grid-item">
-  <svg class="icon huge">
-  <use href="#{{{name}}}"></use>
-  </svg>
-  <span>{{{name}}}</span>
-  <span class="grid-item-footer">
-   <button class="copy" data-clipboard-text="icon-{{{name}}}">Copy</button>
-   <button>Download</button>
-  </span>
-</div>
-{{/icons}}
-{{^icons}}
-No icons
-{{/icons}}
-</div>
-
-### External file `icons.json`
-
-```json
 {"icons": [
   { "name": "home" },
   { "name": "menu" },
@@ -63,4 +33,3 @@ No icons
   { "name": "social-dribbble" }
 ]
 }
-```

@@ -30,3 +30,18 @@ Las dependencias se instalan en la carpeta `node_modules` (creada automáticamen
 npm run serve
 ```
 Este comando ejecuta un servidor estático que apunta a la carpeta `docs` este abrirá el navegador de forma automática mostrando el sitio de prueba con ejemplos de la librería.
+
+## Docsify Plugins
+
+Tool Docs está basado en Docsify y utiliza las siguientes recursos:
+
+Plugins de Docsify:
+
+- Pagination
+- Tabs
+- Copy Code
+- Mustache
+
+Otras Librerías
+
+- Clipboard.js

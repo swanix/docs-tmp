@@ -40,11 +40,24 @@
       previousText: 'Previous',
       nextText: 'Next',
       crossChapter: true
+    },
+    mustache: {
+      noPackage : true,
+      data: [
+        'content/data/icons.json'
+      ]
     }
   };
 </script>
 <!-- Swanix - Tool Docs -->
 <script src="menu.js"></script>
 <script src="dist/tool-docs.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-mustache"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/swanix/icons/dist/swanix-icons.css"/>
+<script src="https://cdn.jsdelivr.net/gh/swanix/icons/dist/swanix-icons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+<script>
+  var clipboard = new ClipboardJS('.copy');
+</script>
 </body>
 </html>

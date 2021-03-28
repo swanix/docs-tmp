@@ -61,3 +61,19 @@ Crea un archivo `index.html` con el siguiente código HTML para iniciar la docum
 </html>
 
 ```
+
+
+## Docsify Plugins
+
+Tool Docs está basado en Docsify y utiliza las siguientes recursos:
+
+Plugins de Docsify:
+
+- Pagination
+- Tabs
+- Copy Code
+- Mustache
+
+Otras Librerías
+
+- Clipboard.js
