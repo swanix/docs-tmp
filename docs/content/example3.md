@@ -2,30 +2,69 @@
 
 # Example 3
 
+## Colors
 
-### Icons List
+Loop from external file `colors.json` using Docsify Mustache plugin:
+
+<section class="grid">
+{{#colors}}
+<div class="grid-item">
+<div class="grid-item-body" style="background-color:{{{codeHex}}}">
+  <h4 class="{{{labelText}}}">{{codeHex}}</h4>
+  <span class="{{{labelText}}}">{{sassVar}}</span>
+</div>
+<div class="grid-item-footer">
+  <button class="copy" data-clipboard-text="{{{codeHex}}}">Copy HEX</button>
+  <button class="copy" data-clipboard-text="{{{codeRgb}}}">Copy RGB</button>
+  <button class="copy" data-clipboard-text="{{{sassVar}}}">Copy Sass</button>
+</div>
+</div>
+{{/colors}}
+{{^colors}}
+No icons
+{{/colors}}
+</section>
+
+#### External file `colors.json`
+
+```json
+{"colors": [
+  { "name": "Brand-1", "sassVar":"$brand-1", "codeHex":"#4D62A4", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-2", "sassVar":"$brand-2", "codeHex":"#87A2BD", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-3", "sassVar":"$brand-3", "codeHex":"#4A5374", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-4", "sassVar":"$brand-4", "codeHex":"#9AA4BF", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-5", "sassVar":"$brand-5", "codeHex":"#04C29C", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-6", "sassVar":"$brand-6", "codeHex":"#38445C", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" }
+]
+}
+```
+
+
+## Icons
 
 Loop from external file `icons.json` using Docsify Mustache plugin:
 
-<div class="grid five-columns">
+<section class="grid five-columns">
 {{#icons}}
 <div class="grid-item">
+<div class="grid-item-body">
   <svg class="icon huge">
   <use href="#{{{name}}}"></use>
   </svg>
   <span>{{{name}}}</span>
-  <span class="grid-item-footer">
-   <button class="copy" data-clipboard-text="icon-{{{name}}}">Copy</button>
-   <button>Download</button>
-  </span>
+</div>
+<div class="grid-item-footer">
+  <button class="copy" data-clipboard-text="{{{name}}}">Copy name</button>
+  <!-- <button>Download</button> -->
+</div>
 </div>
 {{/icons}}
 {{^icons}}
 No icons
 {{/icons}}
-</div>
+</section>
 
-### External file `icons.json`
+#### External file `icons.json`
 
 ```json
 {"icons": [

@@ -1,0 +1,9 @@
+{"colors": [
+  { "name": "Brand-1", "sassVar":"$brand-1", "codeHex":"#4D62A4", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-2", "sassVar":"$brand-2", "codeHex":"#87A2BD", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-3", "sassVar":"$brand-3", "codeHex":"#4A5374", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-4", "sassVar":"$brand-4", "codeHex":"#9AA4BF", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-5", "sassVar":"$brand-5", "codeHex":"#04C29C", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" },
+  { "name": "Brand-6", "sassVar":"$brand-6", "codeHex":"#38445C", "codeRgb":"rgb(255,255,255)", "labelText":"text-light" }
+]
+}

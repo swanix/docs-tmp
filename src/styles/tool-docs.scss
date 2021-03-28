@@ -1240,20 +1240,58 @@ pre::after {
   flex-grow:1; 
   flex-basis: 12%;
   text-align: center; 
-  // padding: 30px 10px; 
   border: 1px solid rgba(234, 239, 246, 1); 
   background: #FFFFFF; 
   transition: .2s ease;
 }
 
 .grid-item:hover { 
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: #000; 
 }
 
-.grid-item-text { 
+/* Item Body */
+
+.grid-item-body { 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+  padding: 32px 20px;
   font-size: 11px;
 }
+
+.grid-item-body .text-light { 
+  color: rgba(255, 255, 255, 1);
+}
+
+.grid-item-body .text-dark { 
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Item Footer */
+
+.grid-item-footer {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  margin-top: auto;
+  transition: .2s ease;
+  background: #f7f7f7;
+  width: 100%;
+}
+
+.grid-item-footer * {
+  cursor: pointer;
+  flex-basis: 100%;
+}
+
+.grid-item:hover .grid-item-footer {
+  opacity: 1;
+}
+
+
+/* Columns modifiers */
 
 .grid.one-column,
 .grid.one-columns, {
@@ -1278,22 +1316,4 @@ pre::after {
 
 .grid.six-columns {
   --grid-item-width: 14%;
-}
-
-/* Grid Actions */
-
-.grid-item-footer {
-  opacity: 0;
-  margin-top: auto;
-  transition: .2s ease;
-  background: #f7f7f7;
-  width: 100%;
-}
-
-.grid-item-footer * {
-  cursor: pointer;
-}
-
-.grid-item:hover .grid-item-footer {
-  opacity: 1;
 }
