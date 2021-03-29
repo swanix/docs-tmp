@@ -191,6 +191,28 @@ function initMenu() {
   }
 };
 
+function initClipboard() {
+  let clipboard = new ClipboardJS('.copy');
+  // Tootip with Hint.css based on
+  // https://github.com/zenorocha/clipboard.js/issues/366
+  clipboard.on('success', event => {
+    console.info('Copied:', event.text);
+    event.clearSelection();
+    if (event.text) {
+      showTooltip(event.trigger, 'copied!');
+    }
+  });
+  
+  function showTooltip(el, msg) {
+    var classNames = el.className;
+    el.setAttribute('class', classNames + ' hint--bottom');
+    setTimeout(function () {
+        el.setAttribute('class', classNames);
+    }, 2000);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initMenu();
+  initClipboard();
 });

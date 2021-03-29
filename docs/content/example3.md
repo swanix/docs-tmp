@@ -4,20 +4,21 @@
 
 ## Colors
 
-Loop from external file `colors.json` using Docsify Mustache plugin:
+Loop from file `colors.json` using Docsify Mustache plugin:
 
+<!-- Mustache section loop -->
 <section class="grid">
 {{#colors}}
 <div class="grid-item">
-<div class="grid-item-body" style="background-color:{{{codeHex}}}">
-  <h4 class="{{{labelText}}}">{{codeHex}}</h4>
-  <span class="{{{labelText}}}">{{sassVar}}</span>
-</div>
-<div class="grid-item-footer">
-  <button class="copy" data-clipboard-text="{{{codeHex}}}">Copy HEX</button>
-  <button class="copy" data-clipboard-text="{{{codeRgb}}}">Copy RGB</button>
-  <button class="copy" data-clipboard-text="{{{sassVar}}}">Copy Sass</button>
-</div>
+  <div class="grid-item-body" style="background-color:{{{codeHex}}}">
+    <h4 class="{{{labelText}}}">{{codeHex}}</h4>
+    <span class="{{{labelText}}}">{{sassVar}}</span>
+  </div>
+  <div class="grid-item-footer">
+    <button class="button copy" data-clipboard-text="{{{codeHex}}}" aria-label="Copied!">Copy HEX</button>
+    <button class="button copy" data-clipboard-text="{{{codeRgb}}}" aria-label="Copied!">Copy RGB</button>
+    <button class="button copy" data-clipboard-text="{{{sassVar}}}" aria-label="Copied!">Copy Sass</button>
+  </div>
 </div>
 {{/colors}}
 {{^colors}}
@@ -42,21 +43,24 @@ No icons
 
 ## Icons
 
-Loop from external file `icons.json` using Docsify Mustache plugin:
+Loop from file `icons.json` using Docsify Mustache plugin:
 
+<!-- Swanix icons assets -->
+<link href="https://cdn.jsdelivr.net/gh/swanix/icons/dist/swanix-icons.css" rel="stylesheet" />
+
+<!-- Mustache section loop -->
 <section class="grid five-columns">
 {{#icons}}
 <div class="grid-item">
-<div class="grid-item-body">
-  <svg class="icon huge">
-  <use href="#{{{name}}}"></use>
-  </svg>
-  <span>{{{name}}}</span>
-</div>
-<div class="grid-item-footer">
-  <button class="copy" data-clipboard-text="{{{name}}}">Copy name</button>
-  <!-- <button>Download</button> -->
-</div>
+  <div class="grid-item-body">
+    <svg class="icon huge">
+      <use href="assets/images/swanix-icons.svg#{{{name}}}"></use>
+    </svg>
+    <span>{{{name}}}</span>
+  </div>
+  <div class="grid-item-footer">
+    <button class="button copy" data-clipboard-text="{{{name}}}" aria-label="Copied!">Copy</button>
+  </div>
 </div>
 {{/icons}}
 {{^icons}}

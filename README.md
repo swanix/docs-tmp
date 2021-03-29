@@ -44,4 +44,5 @@ Plugins de Docsify:
 
 Otras Librerías
 
-- Clipboard.js
+- Clipboard.js https://clipboardjs.com/
+- Hint.css https://github.com/chinchang/hint.css

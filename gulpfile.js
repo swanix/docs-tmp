@@ -75,12 +75,14 @@ function sass_compiler() {
 
 // JS paths
 var inputJs = [
-    "src/scripts/tool-docs-version.js",
-    "src/scripts/docsify.js",
-    "src/scripts/tool-docs.js",
-    "src/scripts/docsify-pagination.js",
-    "src/scripts/docsify-copy-code.js",
-    "src/scripts/docsify-tabs.js"
+  "src/scripts/tool-docs-version.js",
+  "src/scripts/docsify.js",
+  "src/scripts/tool-docs.js",
+  "src/scripts/docsify-pagination.js",
+  "src/scripts/docsify-copy-code.js",
+  "src/scripts/docsify-tabs.js",
+  "src/scripts/docsify-mustache.js",
+  "src/scripts/clipboard.js"
 ];
 var outputJs = 'dist/';
 var outputJsDocs = 'docs/dist/';
