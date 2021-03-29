@@ -31,18 +31,19 @@ npm run serve
 ```
 Este comando ejecuta un servidor estático que apunta a la carpeta `docs` este abrirá el navegador de forma automática mostrando el sitio de prueba con ejemplos de la librería.
 
-## Docsify Plugins
+## Créditos
 
-Tool Docs está basado en Docsify y utiliza las siguientes recursos:
+Tool Docs está basado en diferentes librerías open source:
 
-Plugins de Docsify:
+#### Docsify:
 
-- Pagination
-- Tabs
-- Copy Code
-- Mustache
+- **Docsify** https://docsify.js.org/
+- **Docsify Pagination** https://github.com/imyelo/docsify-pagination
+- **Docsify Tabs** https://jhildenbiddle.github.io/docsify-tabs/
+- **Docsify Copy Code**  https://github.com/jperasmus/docsify-copy-code
+- **Docsify Mustache** https://docsify-mustache.github.io/
 
-Otras Librerías
+#### Otras Librerías
 
-- Clipboard.js https://clipboardjs.com/
-- Hint.css https://github.com/chinchang/hint.css
+- **Clipboard.js** https://clipboardjs.com/
+- **Hint.css** https://github.com/chinchang/hint.css
