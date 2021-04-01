@@ -48,9 +48,6 @@ Elements from file `colors.json` using Docsify Mustache plugin:
   </div>
 </div>
 {{/grey}}
-{{^grey}}
-No hay colores disponibles.
-{{/grey}}
 </section>
 
 ### Grey Blue
