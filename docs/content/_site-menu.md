@@ -1,7 +1,7 @@
 * [Overview](/)
   * [Example 1](/example1)
   * [Example 2](/example2)
-  * [Example 3](/example3)
+  * [Mustache](/example3)
 * [Section](/section)
   * [Example 4](/example4)
   * [Example 5](/example5)

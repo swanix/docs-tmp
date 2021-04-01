@@ -1,10 +1,21 @@
 <figure class="hero" style="--hero-image:url(https://source.unsplash.com/g-YsyUUwT9M/1800x600);"></figure>
 
-# Example 3
+# Mustache
 
-## Colors
+Examples using Docsify Mustache plugin to create visual content from external data `colors.json` and `icons.json`
 
-Elements from file `colors.json` using Docsify Mustache plugin:
+```js
+// Add to Docsify configuration
+window.$docsify = {
+  mustache: {
+    data: [
+      'path/to/colors.json',
+      'path/to/icons.json'
+    ]
+  }
+};
+```
+
 
 <style>
   .colors.grid {
@@ -30,7 +41,11 @@ Elements from file `colors.json` using Docsify Mustache plugin:
   }
 </style>
 
-### Greyscale
+## Colors
+
+<!-- tabs:start -->
+
+#### ** Result **
 
 <section class="grid colors">
 {{#grey}}
@@ -50,52 +65,7 @@ Elements from file `colors.json` using Docsify Mustache plugin:
 {{/grey}}
 </section>
 
-### Grey Blue
-
-<section class="grid colors">
-{{#greyBlue}}
-<div class="grid-item">
-  <div class="grid-item-header" style="background-color:{{{codeHex}}}">
-  </div>
-  <div class="grid-item-body">
-      <span>{{name}}</span>
-      <span>{{codeHex}}</span>
-      <span>{{codeRgb}}</span>
-  </div>
-  <div class="grid-item-footer">
-    <button class="button copy" data-clipboard-text="{{{codeHex}}}" aria-label="Copied!">Copy HEX</button>
-    <button class="button copy" data-clipboard-text="{{{codeRgb}}}" aria-label="Copied!">Copy RGB</button>
-  </div>
-</div>
-{{/greyBlue}}
-</section>
-
-#### Mustache template (greyBlue)
-
-{{=<% %>=}}
-```
-<section class="grid colors">
-{{#greyBlue}}
-<div class="grid-item">
-  <div class="grid-item-header" style="background-color:{{{codeHex}}}">
-  </div>
-  <div class="grid-item-body">
-      <span>{{name}}</span>
-      <span>{{codeHex}}</span>
-      <span>{{codeRgb}}</span>
-  </div>
-  <div class="grid-item-footer">
-    <button class="button copy" data-clipboard-text="{{{codeHex}}}" aria-label="Copied!">Copy HEX</button>
-    <button class="button copy" data-clipboard-text="{{{codeRgb}}}" aria-label="Copied!">Copy RGB</button>
-  </div>
-</div>
-{{/greyBlue}}
-</section>
-
-```
-<%={{ }}=%>
-
-#### Mustache template (grey)
+#### ** Mustache **
 
 {{=<% %>=}}
 ```
@@ -120,10 +90,7 @@ Elements from file `colors.json` using Docsify Mustache plugin:
 ```
 <%={{ }}=%>
 
-
-#### External JSON file
-
-<a href="content/data/colors.json" target="_blank">File colors.json</a>
+#### ** JSON **
 
 ```json
 {
@@ -164,51 +131,16 @@ Elements from file `colors.json` using Docsify Mustache plugin:
     "codeHex":"#1A1A1A", 
     "codeRgb":"rgb(255,255,255)"
   }
-],
-"greyBlue": [
-  { "name": "greyblue1", 
-    "codeHex":"#F4F5FB", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue2", 
-    "codeHex":"#F0F2FA", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue3", 
-    "codeHex":"#E4E9F6", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue4", 
-    "codeHex":"#C2C9D6", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue5", 
-    "codeHex":"#A3ADC2", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue6", 
-    "codeHex":"#8592AD", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue7", 
-    "codeHex":"#47536B", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue8", 
-    "codeHex":"#29303D", 
-    "codeRgb":"rgb(255,255,255)"
-  },
-  { "name": "greyblue9", 
-    "codeHex":"#1F242E", 
-    "codeRgb":"rgb(255,255,255)"
-  }
 ]
 }
 ```
+<!-- tabs:end -->
 
 ## Icons
 
-Loop from file `icons.json` using Docsify Mustache plugin:
+<!-- tabs:start -->
+
+#### ** Result **
 
 <!-- Swanix icons assets -->
 <link href="https://cdn.jsdelivr.net/gh/swanix/icons/dist/swanix-icons.css" rel="stylesheet" />
@@ -228,12 +160,32 @@ Loop from file `icons.json` using Docsify Mustache plugin:
   </div>
 </div>
 {{/icons}}
-{{^icons}}
-No icons
+</section>
+
+#### ** Mustache **
+
+{{=<% %>=}}
+```
+<section class="grid five-columns">
+{{#icons}}
+<div class="grid-item">
+  <div class="grid-item-body">
+    <svg class="icon huge">
+      <use href="assets/images/swanix-icons.svg#{{{name}}}"></use>
+    </svg>
+    <span>{{{name}}}</span>
+  </div>
+  <div class="grid-item-footer">
+    <button class="button copy" data-clipboard-text="{{{name}}}" aria-label="Copied!">Copy</button>
+  </div>
+</div>
 {{/icons}}
 </section>
 
-#### External file `icons.json`
+```
+<%={{ }}=%>
+
+#### ** JSON **
 
 ```json
 {"icons": [
@@ -272,3 +224,5 @@ No icons
 ]
 }
 ```
+
+<!-- tabs:end -->
