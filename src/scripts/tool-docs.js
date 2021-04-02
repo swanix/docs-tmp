@@ -203,11 +203,11 @@ function initClipboard() {
     }
   });
   
-  function showTooltip(el, msg) {
-    var classNames = el.className;
-    el.setAttribute('class', classNames + ' hint--bottom');
-    setTimeout(function () {
-        el.setAttribute('class', classNames);
+function showTooltip(el, msg) {
+  var classNames = el.className;
+  el.setAttribute('class', classNames + ' hint--bottom');
+  setTimeout(function () {
+      el.setAttribute('class', classNames);
     }, 2000);
   }
 }
