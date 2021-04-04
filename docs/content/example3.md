@@ -5,7 +5,11 @@
 ## Chinese characters
 
 Data from https://hanzien.github.io/cards
-
+<div id="characters">
+<input class="search" placeholder="Search" />
+<button class="sort" data-sort="name">
+  Sort by name
+</button>
 <section class="grid list" style="filter: invert(1);">
 {{#characters}}
 <div class="grid-item">
@@ -20,3 +24,4 @@ Data from https://hanzien.github.io/cards
 </div>
 {{/characters}}
 </section>
+</div>

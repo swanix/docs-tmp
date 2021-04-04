@@ -17,38 +17,13 @@ window.$docsify = {
 };
 ```
 
-
-<style>
-  .colors.grid {
-    grid-gap: 24px 24px;
-  }
-
-  .colors .grid-item {
-    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-
-  .colors .grid-item-header {
-    width:100%; 
-    height:140px;
-    border-radius: 8px 8px 0 0;
-  }
-
-  .colors .grid-item-body {
-    padding: 16px 16px;
-    align-items: start;
-    font-size:14px; 
-    border-top:#EDEDED solid 1px;
-  }
-</style>
-
 ## Colors
 
 <!-- tabs:start -->
 
 #### ** Result **
 
-<section class="grid colors">
+<section class="grid palette">
 {{#grey}}
 <div class="grid-item">
   <div class="grid-item-header" style="background-color:{{{codeHex}}}">

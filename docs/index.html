@@ -51,5 +51,21 @@
 <!-- Swanix - Tool Docs -->
 <script src="menu.js"></script>
 <script src="dist/tool-docs.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+
+<script>
+function initFilter() {
+  var options = {
+  valueNames: [ 'name', 'pinyin' ]
+  };
+
+  var userList = new List('characters', options);
+  }
+
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(initFilter, 2000);
+});
+
+</script>
 </body>
 </html>
