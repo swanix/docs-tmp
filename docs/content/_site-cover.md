@@ -1,1 +1,0 @@
-<h1>Swanix Design System</h1>
