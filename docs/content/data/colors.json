@@ -1,0 +1,78 @@
+{
+  "grey": [
+    { "name": "grey1", 
+      "codeHex":"#FAFAFA", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey2", 
+      "codeHex":"#F7F7F7", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey3", 
+      "codeHex":"#EDEDED", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey4", 
+      "codeHex":"#CCCCCC", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey5", 
+      "codeHex":"#B3B3B3", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey6", 
+      "codeHex":"#707070", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey7", 
+      "codeHex":"#474747", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey8", 
+      "codeHex":"#262626", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "grey9", 
+      "codeHex":"#1A1A1A", 
+      "codeRgb":"rgb(255,255,255)"
+    }
+  ],
+  "greyBlue": [
+    { "name": "greyblue1", 
+      "codeHex":"#F4F5FB", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue2", 
+      "codeHex":"#F0F2FA", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue3", 
+      "codeHex":"#E4E9F6", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue4", 
+      "codeHex":"#C2C9D6", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue5", 
+      "codeHex":"#A3ADC2", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue6", 
+      "codeHex":"#8592AD", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue7", 
+      "codeHex":"#47536B", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue8", 
+      "codeHex":"#29303D", 
+      "codeRgb":"rgb(255,255,255)"
+    },
+    { "name": "greyblue9", 
+      "codeHex":"#1F242E", 
+      "codeRgb":"rgb(255,255,255)"
+    }
+  ]
+  }
